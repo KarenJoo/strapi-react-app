@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Homepage from './pages/Homepage';
 import ProductDetails from './pages/ProductDetails';
@@ -9,19 +9,19 @@ import SiteHeader from './components/SiteHeader';
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className='App'>
         <SiteHeader />
-        <Switch>
+        <Routes>
           <Route exact path="/">
             <Homepage />
           </Route>
-          <Route exact path="/details/:id">
+          <Route path="/details/:id">
             <ProductDetails />
           </Route>
-          <Route exact path="/category/:id">
+          <Route path="/category/:id">
             <Category />
           </Route>
-        </Switch>
+        </Routes>
         <h1>ShoeDays</h1>
       </div>
     </Router>
