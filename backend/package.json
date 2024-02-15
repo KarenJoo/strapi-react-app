@@ -1,0 +1,13 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Strapi Backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "strapi start",
+    "develop": "strapi develop" 
+  },
+  "dependencies": {
+    "strapi": "^3.6.11"
+  }
+}
