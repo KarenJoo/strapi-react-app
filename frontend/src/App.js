@@ -9,20 +9,14 @@ import SiteHeader from './components/SiteHeader';
 function App() {
   return (
     <Router>
-      <div className='App'>
+      <div className="App">
         <SiteHeader />
         <Routes>
-          <Route exact path="/">
-            <Homepage />
-          </Route>
-          <Route path="/details/:id">
-            <ProductDetails />
-          </Route>
-          <Route path="/category/:id">
-            <Category />
-          </Route>
+          <Route exact path="/" element={<Homepage />} />
+          <Route path="/details/:id" element={<ProductDetails />} />
+          <Route path="/category/:id" element={<Category />} />
         </Routes>
-        <h1>ShoeDays</h1>
+        <h1>Products</h1>
       </div>
     </Router>
   );
