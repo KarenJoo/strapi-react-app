@@ -22,20 +22,25 @@
       "type": "decimal"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "gender": {
       "type": "enumeration",
       "enum": [
         "Unisex",
-        "Man",
+        "Men",
         "Woman"
       ],
       "default": "Unisex"
+    },
+    "description": {
+      "type": "text",
+      "required": true
     }
   }
 }

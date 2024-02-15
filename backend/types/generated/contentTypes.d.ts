@@ -380,8 +380,9 @@ export interface ApiProductProduct extends Schema.CollectionType {
       Attribute.DefaultTo<'sneaker'>;
     price: Attribute.Decimal;
     image: Attribute.Media;
-    gender: Attribute.Enumeration<['Unisex', 'Man', 'Woman']> &
+    gender: Attribute.Enumeration<['Unisex', 'Men', 'Woman']> &
       Attribute.DefaultTo<'Unisex'>;
+    description: Attribute.Text & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
