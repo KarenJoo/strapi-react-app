@@ -7,15 +7,15 @@ function ProductCard({ product }) {
     <div className="product-card">
       <div className="image">{product.attributes.name}</div>
       <h2>{product.attributes.name}</h2>
-      <h3>{product.attributes.price}</h3>
       <p>{product.attributes.description}</p>
       <Link to={`/products/${product.id}`}>Read more</Link>
+      <h3><p>Price:</p>{product.attributes.price}<p>$</p></h3>
     </div>
   );
 }
 
 function Homepage() {
-  const { loading, error, data } = useFetch('http://localhost:1337/api/products');
+  const { loading, error, data } = useFetch('http://localhost:1337/api/products?populate=*');
   
   if (loading) {
     return <p>Loading products..</p>;

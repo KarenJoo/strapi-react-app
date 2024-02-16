@@ -9,17 +9,22 @@
 
 body {
   margin: 0;
-  font-family: "Manrope";
+  font-family: 'Manrope';
   color: #f0f4f3;
 }
 
-h1,h2,h3,h4 {
-  font-weight: 500;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 300;
   color: var(--primary-color);
 }
 
 p {
   color: var(--secondary-color);
+  font-size: 0.6em;
 }
 
 .App {
@@ -33,7 +38,7 @@ p {
 
 a {
   text-decoration: none;
-  color: #b52424;
+  color: var(--hover);
   border-bottom: 1px dotted;
 }
 
