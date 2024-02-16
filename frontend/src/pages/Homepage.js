@@ -7,9 +7,11 @@ function ProductCard({ product }) {
     <div className="product-card">
       <div className="image">{product.attributes.name}</div>
       <h2>{product.attributes.name}</h2>
-      <p>{product.attributes.description}</p>
-      <Link to={`/products/${product.id}`}>Read more</Link>
-      <h3><p>Price:</p>{product.attributes.price}<p>$</p></h3>
+      <div className="card-content">
+      <p>{product.attributes.description.substring(0, 200)}...</p>
+      <Link to={`/products/${product.id}`}><h5>Read more</h5></Link>
+      <h3><p>Price:</p>{product.attributes.price}<h5>$</h5></h3>
+      </div>
     </div>
   );
 }

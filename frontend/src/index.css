@@ -11,20 +11,28 @@ body {
   margin: 0;
   font-family: 'Manrope';
   color: #f0f4f3;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
 }
 
 h1,
 h2,
 h3,
-h4,
-h5 {
+h4 {
   font-weight: 300;
   color: var(--primary-color);
 }
 
 p {
-  color: var(--secondary-color);
-  font-size: 0.6em;
+  font-weight: 100;
+  color: var(--primary-color);
+  font-size: 0.7em;
+}
+
+h5 {
+  font-weight: 200;
+  color: var(--primary-color);
 }
 
 .App {
@@ -47,4 +55,17 @@ a {
   color: var(--primary-color);
   padding-bottom: 10px;
   border-bottom: 2px solid;
+}
+
+/* product card */
+
+.product-card {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #b69e96;
+}
+.card-content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
 }
