@@ -13,7 +13,7 @@ function App() {
         <SiteHeader />
         <Routes>
           <Route exact path="/" element={<Homepage />} />
-          <Route path="/details/:id" element={<ProductDetails />} />
+          <Route path="/products/:id" element={<ProductDetails />} />
           <Route path="/category/:id" element={<Category />} />
         </Routes>
         <h1>Products</h1>

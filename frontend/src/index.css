@@ -8,7 +8,6 @@
 }
 
 body {
-  margin: 0;
   background-color: var(--bg-color);
   font-family: 'Manrope';
   color: #f0f4f3;
@@ -29,7 +28,7 @@ h3,
 h4 {
   font-weight: 600;
   color: var(--primary-color);
-  padding: 20px;
+  padding-left: 20px;
 }
 
 p {
@@ -74,5 +73,5 @@ a {
 .card-content {
   max-width: 600px;
   margin: 10px auto;
-  padding: 20px;
+  padding-left: 20px;
 }
