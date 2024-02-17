@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 :root {
-  --primary-color: #758d90;
-  --secondary-color: #a190a6;
-  --hover: #b9b4c3;
-  --bg-color: #f5f7f7;
+  --primary-color: #38609d;
+  --secondary-color: #8ea1c6;
+  --hover: #c8d0db;
+  --bg-color: #e5dfd8;
 }
 
 body {
@@ -28,7 +28,11 @@ h3,
 h4 {
   font-weight: 600;
   color: var(--primary-color);
-  padding-left: 20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.3em;
 }
 
 p {
@@ -52,8 +56,8 @@ h5 {
 
 a {
   text-decoration: none;
-  color: var(--hover);
-  border-bottom: 1px dotted;
+  color: var(--secondary-color);
+  border-bottom: 2px dotted;
 }
 
 .site-header h1 {
@@ -66,12 +70,28 @@ a {
 /* product card */
 
 .product-card {
-  padding: 10px 16px;
-  margin: 10px 0;
-  border-bottom: 1px solid #b69e96;
+  margin: 20px auto;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #758d90;
 }
 .card-content {
-  max-width: 600px;
+  max-width: 550px;
   margin: 10px auto;
-  padding-left: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
 }

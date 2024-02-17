@@ -5,15 +5,20 @@ import { Link } from 'react-router-dom';
 function ProductCard({ product }) {
     return (
       <div className="product-card">
-        {/* Assuming image is directly available under product.attributes */}
-        <img src={`http://localhost:1337${product.attributes.image.url}`} alt={product.attributes.name} />      
-        <h2>{product.attributes.name}</h2>
+         <h2>{product.attributes.name}</h2>
+         <div className="image-container">
+        <img src={`http://localhost:1337${product.attributes.image.data.attributes.url}`} alt={product.attributes.name} />      
+       </div>
+       <div className="card-content">
         <p>{product.attributes.description}</p>
-        <Link to={`/products/${product.id}`}>Read more</Link>
+        <Link to={`/products/${product.id}`}><p>Read more</p></Link>
         <h5><p>Price:</p>{product.attributes.price}</h5>
+        </div>
       </div>
     );
-}
+  }
+  
+  
 
 function Homepage() {
   // Construct the URL with the populate parameter
@@ -27,6 +32,7 @@ function Homepage() {
     return <p>Error occurred!</p>;
   }
   
+  console.log(data)
   return (
     <div>
       {data.map(product => (
