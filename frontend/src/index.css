@@ -2,13 +2,14 @@
 
 :root {
   --primary-color: #3d574d;
-  --secondary-color: #617589;
-  --hover: #a3b6bd;
+  --secondary-color: #4b5c6c;
+  --hover: #7b949d;
   --bg-color: #f0f4f3;
 }
 
 body {
   margin: 0;
+  background-color: var(--bg-color);
   font-family: 'Manrope';
   color: #f0f4f3;
   max-width: 700px;
@@ -19,7 +20,8 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   font-weight: 300;
   color: var(--primary-color);
 }
@@ -28,11 +30,6 @@ p {
   font-weight: 100;
   color: var(--primary-color);
   font-size: 0.7em;
-}
-
-h5 {
-  font-weight: 200;
-  color: var(--primary-color);
 }
 
 .App {
