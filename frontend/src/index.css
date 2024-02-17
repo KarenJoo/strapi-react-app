@@ -5,6 +5,7 @@
   --secondary-color: #8ea1c6;
   --hover: #c8d0db;
   --bg-color: #e5dfd8;
+  --shadow: 5px 5px 10px #888888;
 }
 
 body {
@@ -35,6 +36,7 @@ h4 {
 h2 {
   text-align: center;
   font-size: 1.2em;
+  color: #000;
 }
 
 p {
@@ -77,12 +79,13 @@ a {
 }
 
 .product-card {
-  border: 1px solid #758d90;
+  border: 1px solid #efefef;
   margin: 20px;
   width: calc(33.33% - 40px);
   align-items: center;
   box-sizing: border-box;
   display: inline-block;
+  box-shadow: var(--shadow);
 }
 .card-content {
   max-width: 650px;
@@ -98,7 +101,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px;
+  height: 300px;
   overflow: hidden;
 }
 

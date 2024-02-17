@@ -5,14 +5,14 @@ import { Link } from 'react-router-dom';
 function ProductCard({ product }) {
   return (
     <div className="product-card">
-      <h2>{product.attributes.name}</h2>
       <div className="image-container">
         <img src={`http://localhost:1337${product.attributes.image.data.attributes.url}`} alt={product.attributes.name} />      
       </div>
       <div className="card-content">
+        <h2>{product.attributes.name}</h2>
         <p>{product.attributes.description}</p>
-        <Link to={`/products/${product.id}`}><p>Read more</p></Link>
-        <h5><p>Price:</p>{product.attributes.price}</h5>
+        <h3>{product.attributes.price}$</h3>        
+        <Link to={`/products/${product.id}`}><p>view product</p></Link>
       </div>
     </div>
   );
