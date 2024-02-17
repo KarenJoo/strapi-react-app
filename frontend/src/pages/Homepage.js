@@ -17,7 +17,7 @@ function ProductCard({ product }) {
 
 function Homepage() {
   // Construct the URL with the populate parameter
-  const { loading, error, data } = useFetch('http://localhost:1337/api/products?populate[0]=image&populate[1]=image.formats.thumbnail&populate[2]=image.formats.small&populate[3]=image.formats.medium');
+  const { loading, error, data } = useFetch('http://localhost:1337/api/products?populate=*');
   
   if (loading) {
     return <p>Loading products..</p>;
