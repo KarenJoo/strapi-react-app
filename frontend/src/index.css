@@ -19,10 +19,33 @@ body {
   padding: 20px;
 }
 
-.site-header {
-  padding: 20px;
-  font-size: 2em;
-  color: #000;
+.navbar {
+  display: flex;
+  max-width: 800px;
+  margin: 50px auto;
+  height: 130px;
+  border-bottom: 1px solid #b69e96;
+}
+
+.navbar h1 {
+  color: var(--secondary-color);
+  font-size: 3em;
+}
+
+.navbar .links {
+  margin-left: auto;
+  margin-top: 80px;
+  padding-bottom: 0px;
+}
+
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+
+.navbar a:hover {
+  color: var(--hover);
 }
 
 h1,
@@ -61,14 +84,8 @@ h5 {
 a {
   text-decoration: none;
   color: var(--secondary-color);
-  border-bottom: 2px dotted;
-}
-
-.site-header h1 {
-  font-size: 1.5em;
-  color: var(--primary-color);
-  padding-bottom: 10px;
-  border-bottom: 2px solid;
+  font-size: 0.9em;
+  font-weight: 100;
 }
 
 /* product card */
@@ -76,6 +93,7 @@ a {
 .product-list {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 50px;
 }
 
 .product-card {

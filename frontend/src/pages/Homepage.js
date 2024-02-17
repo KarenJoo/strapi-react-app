@@ -29,6 +29,7 @@ function Homepage() {
     return <p>Error occurred!</p>;
   }
   
+  console.log(data);
   return (
     <div className="product-list">
       {data.map(product => (
