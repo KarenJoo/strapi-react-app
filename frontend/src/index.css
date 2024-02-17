@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 :root {
-  --primary-color: #3d574d;
-  --secondary-color: #4b5c6c;
-  --hover: #7b949d;
-  --bg-color: #f0f4f3;
+  --primary-color: #758d90;
+  --secondary-color: #a190a6;
+  --hover: #b9b4c3;
+  --bg-color: #f5f7f7;
 }
 
 body {
@@ -17,19 +17,29 @@ body {
   padding: 20px;
 }
 
+.site-header {
+  padding: 20px;
+  font-size: 2em;
+  color: #000;
+}
+
 h1,
 h2,
 h3,
-h4,
-h5 {
-  font-weight: 300;
+h4 {
+  font-weight: 600;
   color: var(--primary-color);
+  padding: 20px;
 }
 
 p {
-  font-weight: 100;
+  font-weight: 200;
   color: var(--primary-color);
   font-size: 0.7em;
+}
+
+h5 {
+  color: var(--secondary-color);
 }
 
 .App {
@@ -58,11 +68,11 @@ a {
 
 .product-card {
   padding: 10px 16px;
-  margin: 20px 0;
+  margin: 10px 0;
   border-bottom: 1px solid #b69e96;
 }
 .card-content {
   max-width: 600px;
-  margin: 40px auto;
+  margin: 10px auto;
   padding: 20px;
 }
