@@ -9,6 +9,7 @@ export default function ProductDetails() {
 
   useEffect(() => {
     if (!loading && !error && data) {
+      console.log('Product Data:', data); 
       setProduct(data);
     }
   }, [loading, error, data]);
@@ -28,7 +29,8 @@ export default function ProductDetails() {
       <div className="card-content">
         <h2>{attributes.name}</h2>
         <p>{attributes.description}</p>
-        <p>Price: ${attributes.price}</p>
+        <h3>Price: ${attributes.price}</h3>
+        <button className="buy-button">Buy Now</button>
       </div>
     </div>
   );
